@@ -1,51 +1,38 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>Wii U Payloads</title>
-        <style>
-            body {
-                background: #ccc;
-            }
-            td {
-                padding: 10px;
-            }
-            .btn {
-              background: #3498db;
-              background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-              background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-              background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-              background-image: -o-linear-gradient(top, #3498db, #2980b9);
-              background-image: linear-gradient(to bottom, #3498db, #2980b9);
-              font-family: Arial;
-              color: #ffffff;
-              font-size: 48px;
-              padding: 10px 20px 10px 20px;
-              text-decoration: none;
-            }
-
-            .btn:hover {
-              background: #3cb0fd;
-              background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-              background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-              background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-              background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-              background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-              text-decoration: none;
-            }
-        </style>
-        <script type="text/javascript">
+  <head>
+    <title>WiiU Payloads</title>
+    <link rel="stylesheet" href="css/common.min.css" />
+    <link rel="stylesheet" href="css/component.min.css" />
+    <script type="text/javascript" defer="defer">
             function goto(url) {
                 location.href = url;
             }
-        </script>
-    </head>
-    <body>
-        <table>
-            <tr>
-                <td><a class="btn" href="#" onclick="goto('kexploit31/');">kexploit</a></td>
-                <td><a class="btn" href="#" onclick="goto('loadiine_gx2/');">Loadiine GX2</a></td>
-                <td><a class="btn" href="#" onclick="goto('homebrew_launcher/');">HB Launcher</a></td>
-            </tr>
-        </table>
-    </body>
+	</script>
+  </head>
+  <body>
+    <div class="grid">
+      <header class="banner banner_oval banner__content">
+        <h1>WiiU Payloads</h1>
+      </header>
+      <div class="grid__row grid__row--sm">
+        <div class="grid__item">
+          <div class="grid">
+            <div class="grid__row">
+              <div class="grid__item">
+                <a class="button button--inline-block  button--medium" href="#" onclick="goto(&#39;kexploit31/&#39;);">kexploit</a>
+              </div>
+            </div>
+            <div class="grid__row grid__row--lg">
+              <div class="grid__item">
+                <a class="button button--inline-block button--medium" href="#" onclick="goto(&#39;loadiine_gx2/&#39;);">Loadiine GX2</a>
+              </div>
+              <div class="grid__item">
+                <a class="button button--inline-block button--medium" href="#" onclick="goto(&#39;homebrew_launcher/&#39;);">HB Launcher</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
